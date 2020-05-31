@@ -38,6 +38,7 @@ function AppContainer(props) {
             		mapOptions={{
             			center: [47.60357, -122.32945],
             		}}
+            		/>
             	<div className="col-sm-2"></div>
             </div>
         </div>

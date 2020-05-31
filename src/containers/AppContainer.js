@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import fetch from 'isomorphic-unfetch'
 import ZipResponse from '../components/ZipResponse';
 import Zip from '../components/Zip';
-import BingMap from '../components/BingMap';
+import { ReactBingmaps } from 'react-bingmaps';
 
 function AppContainer(props) {
 
@@ -34,11 +34,11 @@ function AppContainer(props) {
             </div>    
             <div className="row mt-4">
             	<div className="col-sm-2"></div>
-            	<BingMap
-            		mapOptions={{
-            			center: [47.60357, -122.32945],
-            		}}
-            		/>
+					<ReactBingmaps 
+					  bingmapKey = "Aug2Q3KaC6_DMA9-TKaljEYw3IkRIntiV4BcEzBz2OURVgkYSgFpNsHYkp6p5VlE" 
+					  center = {[13.0827, 80.2707]}
+					  > 
+					</ReactBingmaps>
             	<div className="col-sm-2"></div>
             </div>
         </div>

@@ -35,7 +35,7 @@ function AppContainer(props) {
             <div className="row mt-4">
             	<div className="col-sm-2"></div>
             	<BingMap
-            		mapOptions{{
+            		mapOptions={{
             			center: [47.60357, -122.32945],
             		}}
             	<div className="col-sm-2"></div>

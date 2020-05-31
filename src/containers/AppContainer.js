@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import fetch from 'isomorphic-unfetch'
 import ZipResponse from '../components/ZipResponse';
 import Zip from '../components/Zip';
+import BingMap from '../components/BingMap';
 
 function AppContainer(props) {
 
@@ -31,6 +32,14 @@ function AppContainer(props) {
                 <ZipResponse responseData={responseData} clearResponse={clearResponse}/>
                 <div className="col-sm-2"></div>
             </div>    
+            <div className="row mt-4">
+            	<div className="col-sm-2"></div>
+            	<BingMap
+            		mapOptions{{
+            			center: [47.60357, -122.32945],
+            		}}
+            	<div className="col-sm-2"></div>
+            </div>
         </div>
     );
 }

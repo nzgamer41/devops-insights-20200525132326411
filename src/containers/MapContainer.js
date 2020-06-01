@@ -6,6 +6,7 @@ var that;
 export function handleLoc(location){
     var geocoder = new window.google.maps.Geocoder();
     var address = location + ", New Zealand";
+    
     geocoder.geocode({'address': address}, function (results, status) {
 
         if (status === window.google.maps.GeocoderStatus.OK) {

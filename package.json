@@ -10,7 +10,7 @@
     "react-dom": "^16.9.0",
     "react-scripts": "^3.3.0",
     "serve": "^11.2.0",
-    "react-bingmaps": "^3.6.1"
+    "google-maps-react": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
